@@ -1,12 +1,7 @@
 plugins {
-    id("org.jetbrains.compose") version COMPOSE_VERSION
     id("com.android.application")
+    id("org.jetbrains.compose")
     kotlin("android")
-}
-
-repositories {
-    google()
-    mavenCentral()
 }
 
 dependencies {
@@ -14,11 +9,11 @@ dependencies {
 }
 
 android {
-    compileSdk = ANDROID_COMPILE_SDK
+    compileSdk = Alyx.Android.Version.COMPILE_SDK
     defaultConfig {
-        applicationId = APPLICATION_GROUP
-        minSdk = ANDROID_MIN_SDK
-        versionName = APPLICATION_VERSION
+        applicationId = Alyx.Application.GROUP
+        versionName = Alyx.Application.VERSION
+        minSdk = Alyx.Android.Version.MIN_SDK
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

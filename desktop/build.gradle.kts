@@ -3,7 +3,7 @@ import org.jetbrains.compose.desktop.application.dsl.TargetFormat
 
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version COMPOSE_VERSION
+    id("org.jetbrains.compose")
 }
 
 kotlin {
@@ -28,16 +28,16 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(
-                TargetFormat.AppImage,
+//                TargetFormat.AppImage,
                 TargetFormat.Deb,
                 TargetFormat.Rpm,
                 TargetFormat.Dmg,
 //                TargetFormat.Pkg,
                 TargetFormat.Exe,
-                TargetFormat.Msi,
+//                TargetFormat.Msi,
             )
-            packageName = APPLICATION_NAME
-            packageVersion = APPLICATION_VERSION
+            packageName = Alyx.Application.NAME
+            packageVersion = Alyx.Application.VERSION
         }
     }
 }

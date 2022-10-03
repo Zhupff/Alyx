@@ -7,12 +7,13 @@ buildscript {
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10")
         classpath("com.android.tools.build:gradle:7.1.1")
+        classpath("org.jetbrains.compose:compose-gradle-plugin:1.2.0-beta01")
     }
 }
 
 allprojects {
-    group = APPLICATION_GROUP
-    version = APPLICATION_VERSION
+    group = Alyx.Application.GROUP
+    version = Alyx.Application.VERSION
     repositories {
         google()
         mavenCentral()

@@ -2,7 +2,7 @@ import org.jetbrains.compose.compose
 
 plugins {
     kotlin("multiplatform")
-    id("org.jetbrains.compose") version COMPOSE_VERSION
+    id("org.jetbrains.compose")
     id("com.android.library")
 }
 
@@ -23,9 +23,9 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                api(ANDROID_APPCOMPAT)
-                api(ANDROID_CORE_KTX)
-                api(ANDROID_ACTIVITY_COMPOSE)
+                api(Alyx.Android.Dependency.APPCOMPAT)
+                api(Alyx.Android.Dependency.CORE_KTX)
+                api(Alyx.Android.Dependency.ACTIVITY_COMPOSE)
             }
         }
         val desktopMain by getting {
@@ -37,10 +37,10 @@ kotlin {
 }
 
 android {
-    compileSdk  = ANDROID_COMPILE_SDK
+    compileSdk  = Alyx.Android.Version.COMPILE_SDK
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdk = ANDROID_MIN_SDK
+        minSdk = Alyx.Android.Version.MIN_SDK
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
