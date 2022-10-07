@@ -5,7 +5,8 @@ plugins {
 }
 
 dependencies {
-    "implementation"(project(":common"))
+    implementation(project(":common"))
+    implementation(project(":common:common-ui"))
 }
 
 android {

@@ -1,4 +1,4 @@
-package zhupff.alyx.common
+package zhupff.alyx.common.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -13,17 +13,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.unit.dp
 
-const val applicationName: String = "Alyx"
-
 @Composable
-fun Launcher(painter: Painter) {
+fun Launcher() {
     Box (
         modifier = Modifier
             .background(Color.Black)
             .fillMaxSize()
     ) {
         Image(
-            painter = painter,
+            painter = LauncherPainter(),
             contentDescription = null,
             modifier = Modifier
                 .align(Alignment.Center)
@@ -32,3 +30,5 @@ fun Launcher(painter: Painter) {
         )
     }
 }
+
+expect fun LauncherPainter(): Painter

@@ -19,6 +19,9 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                if (project.name != project(":common").name) {
+                    implementation(project(":common"))
+                }
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
@@ -26,6 +29,9 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
+                if (project.name != project(":common").name) {
+                    implementation(project(":common"))
+                }
                 api(Alyx.Android.Dependency.APPCOMPAT)
                 api(Alyx.Android.Dependency.CORE_KTX)
                 api(Alyx.Android.Dependency.ACTIVITY_COMPOSE)
@@ -33,6 +39,9 @@ kotlin {
         }
         val desktopMain by getting {
             dependencies {
+                if (project.name != project(":common").name) {
+                    implementation(project(":common"))
+                }
                 api(compose.preview)
             }
         }

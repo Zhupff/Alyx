@@ -9,4 +9,4 @@ pluginManagement {
 rootProject.name = "Alyx"
 include(":android", ":android:module")
 include(":desktop")
-include(":common")
+include(":common", ":common:common-ui")
