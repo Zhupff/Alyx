@@ -1,0 +1,21 @@
+apply plugin: "com.android.application"
+apply from: rootProject.file("gradle/scripts/template.gradle")
+
+android {
+    defaultConfig {
+        applicationId "zhupff.alyx"
+    }
+
+    buildTypes {
+        buildTypes {
+//            debug {
+//                shrinkResources true
+//                minifyEnabled true
+//            }
+            release {
+                shrinkResources true
+                minifyEnabled true
+            }
+        }
+    }
+}
