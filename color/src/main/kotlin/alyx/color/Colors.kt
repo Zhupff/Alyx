@@ -1,4 +1,4 @@
-package zhupff.alyx.color
+package alyx.color
 
 data class Colors(
     val origin: Int, val mode: Mode,

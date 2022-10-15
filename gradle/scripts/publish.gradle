@@ -9,7 +9,6 @@ if (System.getenv("JITPACK") == "true") {
             publications {
                 jitpack(MavenPublication) {
                     from components.java
-                    groupId = "com.github.Zhupff.Alyx"
                     artifactId = project.name
                 }
             }
