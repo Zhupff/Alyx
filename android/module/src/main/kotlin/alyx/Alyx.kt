@@ -1,4 +1,4 @@
-package zhupff.alyx.module
+package alyx
 
 import android.app.Application
 

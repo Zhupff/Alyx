@@ -2,7 +2,7 @@ object Alyx {
 
     object Application {
         const val NAME: String = "Alyx"
-        const val GROUP: String = "zhupff.alyx"
+        const val GROUP: String = "the.alyx"
         const val VERSION: String = "1.0.0"
     }
 

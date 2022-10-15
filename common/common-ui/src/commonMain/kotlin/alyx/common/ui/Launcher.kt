@@ -1,4 +1,4 @@
-package zhupff.alyx.common.ui
+package alyx.common.ui
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

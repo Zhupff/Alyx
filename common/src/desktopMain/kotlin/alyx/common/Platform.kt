@@ -1,3 +1,3 @@
-package zhupff.alyx.common
+package alyx.common
 
 actual val platformName: String = "Desktop"

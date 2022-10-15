@@ -1,3 +1,3 @@
-package zhupff.alyx.common
+package alyx.common
 
 const val applicationName: String = "Alyx"
