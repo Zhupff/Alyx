@@ -3,7 +3,7 @@ apply from: rootProject.file("gradle/scripts/template.gradle")
 
 android {
     defaultConfig {
-        applicationId "zhupff.alyx"
+        applicationId "the.alyx"
     }
 
     buildTypes {

@@ -1,4 +1,4 @@
-package zhupff.alyx.module.common
+package alyx.module.common
 
 import zhupff.instances.load
 import kotlin.reflect.KClass

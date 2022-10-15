@@ -1,4 +1,4 @@
-package zhupff.alyx
+package alyx
 
 import android.content.Intent
 import android.os.Bundle
@@ -17,9 +17,9 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import zhupff.alyx.module.common.LaunchTask
-import zhupff.alyx.module.common.instanceLoader
-import zhupff.alyx.module.framework.BaseActivity
+import alyx.module.common.LaunchTask
+import alyx.module.common.instanceLoader
+import alyx.module.framework.BaseActivity
 import zhupff.instances.load
 
 class MainActivity : BaseActivity() {
@@ -42,7 +42,7 @@ class MainActivity : BaseActivity() {
                     .fillMaxSize()
             ) {
                 Image(
-                    painter = painterResource(zhupff.alyx.module.R.drawable.logo),
+                    painter = painterResource(alyx.module.R.drawable.logo),
                     contentDescription = null,
                     modifier = Modifier
                         .align(Alignment.Center)

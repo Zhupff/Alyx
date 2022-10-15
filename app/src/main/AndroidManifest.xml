@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="zhupff.alyx">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="alyx">
 
     <application
         android:label="Alyx"
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/Alyx.BaseTheme"
-        android:name=".module.framework.Alyx">
+        android:name=".Alyx">
         <activity
             android:name=".MainActivity"
             android:exported="true"

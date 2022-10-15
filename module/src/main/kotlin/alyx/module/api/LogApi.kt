@@ -1,4 +1,4 @@
-package zhupff.alyx.module.api
+package alyx.module.api
 
 interface LogApi : NonNullApi {
     companion object : LogApi by getNonNullApi()

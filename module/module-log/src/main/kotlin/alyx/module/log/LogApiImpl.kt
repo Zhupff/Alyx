@@ -1,8 +1,8 @@
-package zhupff.alyx.module.log
+package alyx.module.log
 
 import android.util.Log
-import zhupff.alyx.module.api.ApiImpl
-import zhupff.alyx.module.api.LogApi
+import alyx.module.api.ApiImpl
+import alyx.module.api.LogApi
 import zhupff.instances.InstanceOf
 import kotlin.reflect.KClass
 

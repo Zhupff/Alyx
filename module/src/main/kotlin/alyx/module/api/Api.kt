@@ -1,8 +1,8 @@
 @file:Suppress("UNCHECKED_CAST")
 
-package zhupff.alyx.module.api
+package alyx.module.api
 
-import zhupff.alyx.module.common.instanceLoader
+import alyx.module.common.instanceLoader
 import zhupff.instances.load
 import kotlin.reflect.KClass
 

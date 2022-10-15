@@ -1,6 +1,6 @@
-package zhupff.alyx.module.common
+package alyx.module.common
 
-import zhupff.alyx.module.framework.Alyx
+import alyx.Alyx
 import zhupff.instances.InstanceLoader
 
 val instanceLoader: InstanceLoader = InstanceLoader(Alyx.application.classLoader)

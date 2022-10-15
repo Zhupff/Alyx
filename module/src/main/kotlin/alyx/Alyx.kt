@@ -1,7 +1,7 @@
-package zhupff.alyx.module.framework
+package alyx
 
 import android.app.Application
-import zhupff.alyx.module.api.Api
+import alyx.module.api.Api
 
 class Alyx : Application() {
     companion object {
